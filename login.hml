@@ -7,8 +7,12 @@
 </head>
 <body>
     <header>
-        Home <br>
-        <h1>Login in NRIIT Learning Management</h1>
+    <main>
+    <form>
+    <label>email</label><br>
+    <input type=
+    Home<br>
+    <h1>Login in NRIIT Learning Management</h1>
         <p>Learn Practice Get Placed</p>
         <nav>
             <a href="index.html">Home</a>
