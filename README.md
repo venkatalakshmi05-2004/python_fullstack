@@ -1,4 +1,11 @@
 # python_fullstack
-
-html  - hyper text markup language--srtucture of wed pge
-js-java script--responsive ui
+git add .
+git commit -m "html"
+git push
+CSS Selectors
+Colors & Fonts
+Box Model
+Flexbox
+Grid
+Responsive Design
+Bootstrap (Introduction)
