@@ -20,3 +20,8 @@ react- web framework for frontend development in javascript
 flask,fastapi,django-web framework for backend development in python
 orm- object relational mapping, it is a technique that allows you to query and manipulate data from a database.
 
+ctrl+j
+git add .
+git commit -m "html"
+git push
+gmeet code -
