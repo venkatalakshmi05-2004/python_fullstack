@@ -1,5 +1,5 @@
 
-from flask import Flask,render_template
+from flask import Flask,render_template,jsonify,request
 
 app = Flask(__name__)
 
@@ -7,28 +7,31 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/about")
+@app.route('/about')
 def about():
     return render_template("about.html")
 
-@app.route("/contact")
-def about():
+@app.route('/contact')
+def contact():
     return render_template("contact.html")
-@app.route("/index")
-def about():
-    return render_template("index.html")
-@app.route("/login")
-def about():
-    return render_template("login.html")
-@app.route("/courses")
-def about():
-    return render_template(courses.html)
-@app.route("/register")
-def about():
-    return render_template(register.html)
-@app.route ("/trainers")
-def about():
-    return render_template(trainer.html)
 
-if __name__=='__main__':
-   app.run(debug=True)
+@app.route('/courses')
+def courses():
+    return render_template("courses.html")
+
+@app.route('/trainers')
+def trainers():
+    return render_template("trainers.html")
+@app.route('/register',methods=["POST","GET"])
+def register():
+    if request.method=="POST":
+        name=request.form["name"]
+        email=request.form["email"]
+        password=request.form["password"]
+        dob=request.form["dob"]
+        gender=request.form["gender"]
+        courses=request.form["course"]
+        return render_template("register.html")
+
+if __name__ == '__main__':
+    app.run(debug=True)
