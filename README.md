@@ -51,4 +51,7 @@ pip install -r requirements.txt
 (env) billa@EliteBook:~/Sriram_repos/Python_fullstack12 % python3 app.py
 python3 app.py
 
+# status codes
+200 0k
+201 created
 

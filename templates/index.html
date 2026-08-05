@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{url_for('static',filename=css/style.css)}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <title>Home</title>
 </head>
 
@@ -31,7 +31,7 @@
         track their learning journey.
       </p>
       <p id="message">Learning never stops</p>
-      <img src="image/banner.jpg" alt="LMS Banner" width="100" class="banner">
+      <img src="{{ url_for('static', filename='images/trainer1.jpg') }}" alt="Trainer" width="100" class="trainer-image">
       <br><br>
       <button onclick="showmessage()">Click Me</button>
       <button onclick="changeHeading()">ChangeHeading</button>
@@ -72,8 +72,7 @@
     <a href="#">LinkedIn</a>
 
   </footer>
-  <script src="js/script.js"></script>
-  <script src="{{url_for('static',filename='js/script.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
