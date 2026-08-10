@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <title>Course page</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 
 <body>
@@ -37,9 +37,12 @@
         <td id="courseMode">Offline</td>
       </tr>
     </table>
+    <br>
+    <button id="nextCourseBtn">Next Course</button>
+    <button id="applyCourseBtn">Apply Now</button>
     <section>
       <h2>Learning Path</h2>
-      <ol>
+      <ol id="courseLearningPath">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
